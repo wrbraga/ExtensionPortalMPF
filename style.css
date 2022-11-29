@@ -1,0 +1,14 @@
+.rounded-circle {
+  border-radius: 40% !important;
+  width: 60px;
+}
+
+.canvas1 {
+	background: #59b8de;
+	width: 60px;
+	height: 60px;
+}
+
+.linkPreffered {
+	display: block;
+}
