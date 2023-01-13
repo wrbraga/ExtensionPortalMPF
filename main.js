@@ -27,7 +27,7 @@ function sanitizer(html) {
 
 function returnArrayMenu() {
 	var pos = 1;
-	return sites = [
+	return valor = [
 		[pos++,"https://portal.mpf.mp.br/novaintra","img/icone-Intranet-MPFNOVA.jpg","intranet"],
 		[pos++,"https://portal.mpf.mp.br/unico","img/icone-unico-4.jpg","Único"],
 		[pos++,"https://portal.mpf.mp.br/unico","img/icone-unicobeta.jpg","Único - Versão Beta"],	
@@ -48,11 +48,11 @@ function returnArrayMenu() {
 		[pos++,"https://portal.mpf.mp.br/sisam/portal","img/icone-SISAM.png","SISAM"],
 		[pos++,"https://portal.mpf.mp.br/sspr",null,"Portal de Senhas"],
 		[pos++,"https://portal.mpf.mp.br/antispam",null,"ANTISPAM"],
-	        [pos++,"https://portal.mpf.mp.br/asi/",null,"ASI"],
-        	[pos++,"https://portal.mpf.mp.br/contel",null,"Contel"],
+	    [pos++,"https://portal.mpf.mp.br/asi/",null,"ASI"],
+        [pos++,"https://portal.mpf.mp.br/contel",null,"Contel"],
 		[pos++,"https://portal.mpf.mp.br/apex/f?p=332",null,"Destinações COVID"],
 		[pos++,"https://portal.mpf.mp.br/ejbca/enrol/browser.jsp",null,"Emissão de Certificado Digital (AC-Interna)"],
-	        [pos++,"https://sgov.net.br/",null,"Emissão de Certificado Digital (Em Nuvem)"],
+	    [pos++,"https://sgov.net.br/",null,"Emissão de Certificado Digital (Em Nuvem)"],
 		[pos++,"https://portal.mpf.mp.br/extractus/?atena_reiniciar_historico=true",null,"Extractus"],
 		[pos++,"https://portal.mpf.mp.br/apex/f?p=inventario_de_sistemas",null,"Inventário de Sistemas"],
 		[pos++,"https://portal.mpf.mp.br/apex/f?p=264",null,"LGPD Consulta"],
@@ -166,7 +166,7 @@ function insertNewElementInPortal() {
 }
 
 function colContent(id, link,img,txt) {
-	text = `<div class="col-lg-2 col-md-4 col-sm-4 col-4">
+	var text = `<div class="col-lg-2 col-md-4 col-sm-4 col-4">
 		  <input class="linkPreffered" style="display: none;" type="checkbox" id="icone${id}" name="icone${id}" value="${id}" onclick="favorite(${id})">
           <a href="${link}" target="_blank">
           <img src="${img}" class="bd-placeholder-img rounded-circle img-fluid icone" alt="" style="">
