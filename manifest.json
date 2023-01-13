@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "PortalMPF",
-    "version": "0.2",
+    "version": "0.3",
     "description": "Altera as propriedades do Portal MPF",
     "icons": {"48": "icons/icone.png"},
     
@@ -13,7 +13,7 @@
     
     "content_scripts": [
     {
-      "matches": ["*://portal.mpf.mp.br/*"],
+      "matches": ["*://portal.mpf.mp.br/"],
       "css" : ["style.css"],
       "js": ["main.js"]
     }
